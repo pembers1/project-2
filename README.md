@@ -49,7 +49,9 @@ For example:
 *	Stores: 254
 
 Option 1: 343 PPKs Sent (69%)
+
 Option 4: 396 PPKs Sent (79%)
+
 Option 20: 683 PPKs Sent (137% / Invalid)
 
 The allocation percentage is calculated automatically, helping planners select the option that achieves the closest alignment to the business target. In this scenario, option 4 gives us the best result.
