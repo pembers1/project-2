@@ -28,9 +28,9 @@ I developed an Excel-based allocation planning tool that converts inventory inta
 
 Users enter:
 
-•	Number of stores
-•	Sizes contained within a PPK
-•	Total PPK intake
+*	Number of stores
+*	Sizes contained within a PPK
+*	Total PPK intake
 
 The tool automatically calculates a range of allocation scenarios and produces the corresponding profile code required by the business system.
 
@@ -39,8 +39,8 @@ The model also shows the percentage of total intake being distributed, allowing 
 ## Methodology
 The tool generates a range of potential allocation profiles and calculates:
 
-•	Total PPKs distributed
-•	Allocation percentage
+*	Total PPKs distributed
+*	Allocation percentage
 
 Users can select a predefined option that best matches the desired distribution strategy.
 For example:
