@@ -6,8 +6,8 @@ Developed an inventory allocation and profile optimisation tool using Excel and 
 ## Business Problem
 When new product lines are received into the business, stock can arrive as either:
 
-•	Pre-packaged assortments (PPKs)
-•	Individual bulk sizes
+*	Pre-packaged assortments (PPKs)
+*	Individual bulk sizes
 
 PPKs are generally preferred because they contain a balanced size profile and are more efficient to distribute to stores, whereas bulk boxes only contain one size, and have to be broken down into individual sizes to be picked effectively by the warehouse.
 
