@@ -34,7 +34,7 @@ Users enter:
 
 The tool automatically calculates a range of allocation scenarios and produces the corresponding profile code required by the business system.
 
-The model also shows the percentage of total intake being distributed, allowing planners to quickly identify the option that most closely aligns with the target allocation strategy. The options run from 1 through to 20 as I found this to be the best way of maximising tidyness and providing effective optionality.
+The model also shows the percentage of total intake being distributed, allowing planners to quickly identify the option that most closely aligns with the target allocation strategy. The options run from 1 through to 20 as I found this to be the best way of maximising tidyness within the spreadsheet whilst providing effective optionality.
 
 ## Methodology
 The tool generates a range of potential allocation profiles and calculates:
