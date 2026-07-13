@@ -15,11 +15,11 @@ Usually, the business aims to distribute approximately 80% of incoming PPK stock
 
 Determining the optimal allocation level manually required multiple calculations involving:
 
-•	Number of stores
-•	Number of sizes per PPK
-•	Total PPK intake
-•	Guessing profile requirements
-•	Generating and running synthetic picks to see how many PPKs were being sent out in total.
+*	Number of stores
+*	Number of sizes per PPK
+*	Total PPK intake
+*	Guessing profile requirements
+*	Generating and running synthetic picks to see how many PPKs were being sent out in total.
 
 This made the process time-consuming and increased the risk of selecting suboptimal allocation quantities.
 
