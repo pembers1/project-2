@@ -1,98 +1,135 @@
-# Anomaly Detection & Exception Reporting
+# Scenario Modelling & Profile Optimisation
 
 ## Project Summary
-Developed an automated inventory analysis tool that identifies size-level stock imbalances using threshold-based exception reporting. The solution calculates each size's contribution to total inventory and flags anomalies for investigation.
+Developed an inventory allocation and profile optimisation tool using Excel and advanced lookup-based modelling techniques. The solution automates PPK distribution planning, generates system-ready allocation profiles, and supports data-driven inventory decisions by modelling multiple allocation scenarios against business stock targets. This reduced manual planning effort while improving consistency, scalability, and inventory control.
 
 ## Business Problem
-Retail inventory should generally be distributed across sizes in line with expected customer demand.
-However, stock imbalances can develop over time where a disproportionate amount of inventory becomes concentrated in a single size.
+When new product lines are received into the business, stock can arrive as either:
 
-These imbalances are difficult to identify manually because they require reviewing inventory positions across multiple sizes, styles and locations.
+•	Pre-packaged assortments (PPKs)
+•	Individual bulk sizes
 
-Prior to the development of this tool, identifying size imbalances required manual review of inventory positions across multiple styles and locations. The automated process transformed this into a streamlined exception-reporting system.
+PPKs are generally preferred because they contain a balanced size profile and are more efficient to distribute to stores, whereas bulk boxes only contain one size, and have to be broken down into individual sizes to be picked effectively by the warehouse.
 
-Unexpected size imbalances can indicate:
-*	Marketplace listing issues
-*	Online availability problems
-*	Inventory inefficiencies
-*	Potential recall opportunities
+Usually, the business aims to distribute approximately 80% of incoming PPK stock to stores whilst retaining enough inventory to support future replenishment requirements. This ensures stores have the full size range of a new style available to sell.
+
+Determining the optimal allocation level manually required multiple calculations involving:
+
+•	Number of stores
+•	Number of sizes per PPK
+•	Total PPK intake
+•	Guessing profile requirements
+•	Generating and running synthetic picks to see how many PPKs were being sent out in total.
+
+This made the process time-consuming and increased the risk of selecting suboptimal allocation quantities.
 
 ## Solution Developed
-I developed an automated inventory analysis tool that identifies styles with abnormal size distributions.
+I developed an Excel-based allocation planning tool that converts inventory intake information into a profile code that can be directly applied within the inventory management system.
 
-The process imports size-level inventory data and calculates the percentage contribution of each size to the total stock position. The model automatically highlights styles where a single size exceeds predefined business thresholds.
+Users enter:
 
-The solution dramatically reduces the amount of manual review required and helps focus attention on styles requiring investigation.
+•	Number of stores
+•	Sizes contained within a PPK
+•	Total PPK intake
+
+The tool automatically calculates a range of allocation scenarios and produces the corresponding profile code required by the business system.
+
+The model also shows the percentage of total intake being distributed, allowing planners to quickly identify the option that most closely aligns with the target allocation strategy. The options run from 1 through to 20 as I found this to be the most effective way of keeping the dashboard tidy.
 
 ## Methodology
-Each size percentage is evaluated against predefined thresholds.
-When a size exceeds the threshold, the style is automatically flagged for further investigation.
-The threshold can be adjusted to align with business requirements.
+The tool generates a range of potential allocation profiles and calculates:
+
+•	Total PPKs distributed
+•	Allocation percentage
+
+Users can select a predefined option that best matches the desired distribution strategy.
+For example:
+
+*	PPK Intake: 500
+*	Stores: 254
+
+Option 1: 343 PPKs Sent (69%)
+Option 4: 396 PPKs Sent (79%)
+Option 20: 683 PPKs Sent (137% / Invalid)
+
+The allocation percentage is calculated automatically, helping planners select the option that achieves the closest alignment to the business target. In this scenario, option 4 gives us the best result.
 
 ## Business Impact
-Faster Identification of Inventory Issues
-* Automatically highlights size-level inventory anomalies across large datasets.
+Prior to the development of this tool, allocation planning required manual calculations and comparisons to determine how incoming PPK stock should be distributed across the store network. Planners needed to evaluate multiple allocation scenarios, estimate store coverage levels, and ensure that distribution decisions aligned with the business objective of sending approximately 80% of available PPK stock to stores.
 
-Reduced Manual Analysis
-* Removes the need to manually review individual size distributions.
+The allocation planning tool transformed this process into a structured decision-support model, automatically generating allocation scenarios, calculating distribution percentages, and producing system-ready profile codes. This reduced the complexity of the planning process and enabled faster, more consistent inventory allocation decisions.
 
-Supports Marketplace Investigations
-* Helps identify styles where abnormal stock patterns may be linked to marketplace availability issues.
+Faster Allocation Planning
+* Eliminates the need for manual allocation calculations when distributing new product lines.
 
-Recall Opportunity Identification
-* Highlights styles that may benefit from inventory balancing or recall activity.
+Improved Consistency
+* Applies the same logic to every allocation decision.
 
-Exception-Based Management
-* Allows analysts and stock controllers to focus on flagged exceptions rather than reviewing every style individually.
+Better Inventory Control
+* Helps maintain an appropriate balance between store allocation and retained inventory.
+
+Reduced Planner Workload
+* Transforms a multi-step manual process into a simple input-and-select workflow.
+
+System Integration
+* Generates profile codes that can be used directly within the business inventory management system.
 
 ## Tools & Technologies Used
-* MAPPER
 * Microsoft Excel
-* Office Scripts
+* XLOOKUP
+* Formula-Based Modelling
 
 ## Screenshots & Workflow Evidence
 The screenshots below demonstrate the workflow used to identify size-level inventory imbalances across the retail network. They show how stock data was extracted, transformed, analysed, and automated.
 
 To protect commercially sensitive information, all screenshots used anonymized or representative data. The workflow, logic, and outputs accurately reflect the process used within the solution.
 
-### Screenshot 1: Data Gathering in MAPPER
-This screenshot shows the custom MAPPER query used to retrieve inventory data by style, size, and location across the business. The report was specifically designed to provide the detailed stock information needed for analysis.
+### Screenshot 1: Allocation Inputs
+This screenshot shows the key business inputs required by the allocation model.
 
-### Screenshot 2: Data Transformed in Excel
-This screenshot demonstrates the exported inventory data was imported into Microsoft Excel and prepared for automated analysis. The data structure was organised to support size-level calculations and aggregations.
+Users enter:
 
-### Screenshot 3: Office Script Automation
-This screenshot shows the Office Script used to automate the analysis process. The script applies predefined business rules, calculates size distribution percentages, and removes the need for manual review.
+*	Total number of pairs contained within each PPK
+*	Total number of stores receiving stock
+*	Total PPK intake received
 
-The automation standardises the process, improves consistency, and significantly reduces the time required to identify potential inventory issues.
+These values form the foundation of the allocation calculations and drive all subsequent distribution scenarios.
+ 
+### Screenshot 2: Scenario Selection
+This screenshot demonstrates the scenario selection process. 
 
-### Screenshot 4: Office Script Automation
-This screenshot shows the output after the automation has been executed. The model calculates the percentage contribution of each size against the total stock position for a style and automatically flags anomalies.
+The model generates multiple allocation options, each representing a different percentage of the incoming stock being distributed. Users can select the most appropriate option based on current business objectives, stock availability, and store requirements.
 
-Items highlighted as Overweight indicate an unusually high concentration of stock in a particular size and are automatically marked for further investigation.
+In this example, Option 4 has been selected as the preferred allocation strategy.
+ 
+### Screenshot 3: System Profile Configuration
+This screenshot shows the allocation profile mapping used by the model.
 
-These anomalies can often indicate marketplace listing issues, missing sizes on online channels, inventory imbalances, or potential stock recall opportunities
+The configuration table links allocation outputs to the profile codes required by the system. This allows the model to automatically generate system-ready outputs rather than requiring planners to guess profile codes.
 
-### Screenshot 5: Filtered Exception Reporting
-This screenshot demonstrates how the automated output can be filtered to focus exclusively on flagged styles. This exception-based approach allows stock controllers to concentrate on potential issues.
+The profile codes are calculated based on the number of sizes in a PPK, and the number of PPKs going out to stores.
+ 
+### Screenshot 4: Allocation Modeling Engine
+This screenshot shows the output from the users decisions.
 
-### Screenshot 6: Adjustable Business Rules
-This screenshot shows how the threshold used to generate an Overweight flag can be configured within the Office Script.
+The tool automatically calculates a range of distribution scenarios, displaying:
 
-In this example, styles are flagged when a single size accounts for more than 60% of total stock for that style. By adjusting this value, the tool can be tailored to match changing business requirements.
+*	The percentage of PPKs going out against the total PPKs
+*	The number of PPKs going out
 
+This enables users to double check their approaches and identify whether the option they selected most closely aligns with the business target.
 
-[Add additional screenshots as needed]
+In the example shown, the selected allocation profile distributes 393 PPKs, representing approximately 79% of available intake, closely matching the business objective of distributing around 80% of incoming PPK stock.
+ 
+### Screenshot 5: Excel Decision Support Model
+The final output provides a recommended recall quantity for review. This gives planners a clear, data-supported starting point and reduces the amount of manual interpretation required.
 
 ## Skills Demonstrated
-* Data Preparation
-* Data Transformation
-* Data Analysis
-* Inventory Analysis
-* Office Scripts
-* Excel Automation
-* Exception Reporting
-* Business Analysis
-* Business Process Improvement
-* Root Cause Investigation
-* Data-Driven Decision Making
+*	Business Analysis
+*	Inventory Planning
+*	Process Improvement
+*	Excel Modelling
+*	Advanced Excel Functions
+*	Decision Support Systems
+*	Inventory Optimisation
+*	Operational Analytics
