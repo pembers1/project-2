@@ -129,13 +129,8 @@ This enables users to double check their approaches and identify whether the opt
 
 In the example shown, the selected allocation profile distributes 393 PPKs, representing approximately 79% of available intake, closely matching the business objective of distributing around 80% of incoming PPK stock.
 
-![Image Alt](https://github.com/pembers1/project-2/blob/main/Screenshot%202026-07-10%20090045%205.png?raw=true)
+![Image Alt](https://github.com/pembers1/project-2/blob/main/Screenshot%202026-07-10%20090045%206.png?raw=true)
  
-### Screenshot 5: Excel Decision Support Model
-The final output provides a recommended recall quantity for review. This gives planners a clear, data-supported starting point and reduces the amount of manual interpretation required.
-
-![Image Alt](https://github.com/pembers1/project-2/blob/main/Screenshot%202026-07-10%20090045%205.png?raw=true)
-
 ## Skills Demonstrated
 *	Business Analysis
 *	Inventory Planning
