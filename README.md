@@ -96,6 +96,8 @@ Users enter:
 *	Total PPK intake received
 
 These values form the foundation of the allocation calculations and drive all subsequent distribution scenarios.
+
+![Image Alt](https://github.com/pembers1/project-2/blob/main/Screenshot%202026-07-10%20090045%202.png?raw=true)
  
 ### Screenshot 2: Scenario Selection
 This screenshot demonstrates the scenario selection process. 
@@ -103,6 +105,8 @@ This screenshot demonstrates the scenario selection process.
 The model generates multiple allocation options, each representing a different percentage of the incoming stock being distributed. Users can select the most appropriate option based on current business objectives, stock availability, and store requirements.
 
 In this example, Option 4 has been selected as the preferred allocation strategy.
+
+![Image Alt](https://github.com/pembers1/project-2/blob/main/Screenshot%202026-07-10%20090045%203.png?raw=true)
  
 ### Screenshot 3: System Profile Configuration
 This screenshot shows the allocation profile mapping used by the model.
@@ -110,6 +114,8 @@ This screenshot shows the allocation profile mapping used by the model.
 The configuration table links allocation outputs to the profile codes required by the system. This allows the model to automatically generate system-ready outputs rather than requiring planners to guess profile codes.
 
 The profile codes are calculated based on the number of sizes in a PPK, and the number of PPKs going out to stores.
+
+![Image Alt](https://github.com/pembers1/project-2/blob/main/Screenshot%202026-07-10%20090045%204.png?raw=true)
  
 ### Screenshot 4: Allocation Modeling Engine
 This screenshot shows the output from the users decisions.
@@ -122,9 +128,13 @@ The tool automatically calculates a range of distribution scenarios, displaying:
 This enables users to double check their approaches and identify whether the option they selected most closely aligns with the business target.
 
 In the example shown, the selected allocation profile distributes 393 PPKs, representing approximately 79% of available intake, closely matching the business objective of distributing around 80% of incoming PPK stock.
+
+![Image Alt](https://github.com/pembers1/project-2/blob/main/Screenshot%202026-07-10%20090045%205.png?raw=true)
  
 ### Screenshot 5: Excel Decision Support Model
 The final output provides a recommended recall quantity for review. This gives planners a clear, data-supported starting point and reduces the amount of manual interpretation required.
+
+![Image Alt](https://github.com/pembers1/project-2/blob/main/Screenshot%202026-07-10%20090045%205.png?raw=true)
 
 ## Skills Demonstrated
 *	Business Analysis
