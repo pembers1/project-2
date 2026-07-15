@@ -76,6 +76,9 @@ Reduced Planner Workload
 System Integration
 * Generates profile codes that can be used directly within the business inventory management system.
 
+Time Saved
+* Up to 3 hours weekly.
+
 ## Tools & Technologies Used
 * Microsoft Excel
 * XLOOKUP
