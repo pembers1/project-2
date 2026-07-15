@@ -106,7 +106,7 @@ The model generates multiple allocation options, each representing a different p
 
 In this example, Option 4 has been selected as the preferred allocation strategy.
 
-![Image Alt](https://github.com/pembers1/project-2/blob/main/Screenshot%202026-07-10%20090045%203.png?raw=true)
+![Image Alt](https://github.com/pembers1/project-2/blob/main/Screenshot%202026-07-10%20090045%204.png?raw=true)
  
 ### Screenshot 3: System Profile Configuration
 This screenshot shows the allocation profile mapping used by the model.
@@ -115,7 +115,7 @@ The configuration table links allocation outputs to the profile codes required b
 
 The profile codes are calculated based on the number of sizes in a PPK, and the number of PPKs going out to stores.
 
-![Image Alt](https://github.com/pembers1/project-2/blob/main/Screenshot%202026-07-10%20090045%204.png?raw=true)
+![Image Alt](https://github.com/pembers1/project-2/blob/main/Screenshot%202026-07-10%20090045%205.png?raw=true)
  
 ### Screenshot 4: Allocation Modeling Engine
 This screenshot shows the output from the users decisions.
