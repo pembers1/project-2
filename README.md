@@ -1,5 +1,7 @@
 # Scenario Modelling & Profile Optimisation
 
+[Home](https://github.com/pembers1/portfolio-homepage#data-analytics--business-intelligence-portfolio)
+
 ## Project Summary
 Developed an inventory allocation and profile optimisation tool using Excel and advanced lookup-based modelling techniques. The solution automates PPK distribution planning, generates system-ready allocation profiles, and supports data-driven inventory decisions by modelling multiple allocation scenarios against business stock targets. This reduced manual planning effort while improving consistency, scalability, and inventory control.
 
